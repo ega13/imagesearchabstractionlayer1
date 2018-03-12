@@ -13,7 +13,7 @@ app.get('/api/imagesearch/: searchVal*' , (res,req,next) =>{
 var {searchVal} = req.params;
   var {offset} = req.query;
   
-  res.json({
+  return res.json({
   searchVal,
   offset
   });
