@@ -37,7 +37,9 @@ var {searchVal} = req.params;
     offset=0;
       searchOffset=1;
     }
-    else if(offset>1){}
+    else if(offset>1){
+    searchOffset = offset +1;
+    }
      }
   Bing.images(searchVal, {
   top:(10*searchOffset),
