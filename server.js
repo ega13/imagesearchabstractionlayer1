@@ -9,11 +9,22 @@ var searchTerm = require('./models/searchterm');
 
 app.use(bodyParser.json());
 app.use(cors());
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/search')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/searchTerm');
 
 app.get('/api/imagesearch/: searchVal*' , (res,req,next) =>{
 var {searchVal} = req.params;
   var {offset} = req.query;
+  var data = new searchTerm({
+    searchVal,
+    searchDate: new Date()
+  });
+  
+  data.save(err=>{
+    if(err){
+    res.send('error saving to database');
+    }
+    res.json(data);
+  });
   
   return res.json({
   searchVal,
