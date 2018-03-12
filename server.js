@@ -5,9 +5,11 @@ var bodyParser= require('body-parser');
 var cors= require('cors');
 var mongoose = require('mongoose');
 var Big = require('node-bing-api')({accKey: ' 5dd324c7c56247f8afaa711de888b14c'});
+var searchTerm = require('./models/searchterm');
 
 app.use(bodyParser.json());
 app.use(cors());
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/search')
 
 app.get('/api/imagesearch/: searchVal*' , (res,req,next) =>{
 var {searchVal} = req.params;
