@@ -31,7 +31,12 @@ var {searchVal} = req.params;
     }
     
   });
-  Bing.images
+  Bing.images(searchVal, {
+  top:10,
+    
+  }, function(error,res, body){
+ var bingData = [];
+  });
 });
 
 
