@@ -9,7 +9,7 @@ var searchTerm = require('./models/searchterm');
 
 app.use(bodyParser.json());
 app.use(cors());
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/searchTerms');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/searchTerm');
 
 app.get('/api/recentsearchs', (res,req,next) =>{
 searchTerm.find({},(err,data) =>{
