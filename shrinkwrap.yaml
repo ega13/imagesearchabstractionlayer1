@@ -1,8 +1,8 @@
 dependencies:
   body-parser: 1.18.2
   cors: 2.8.4
-  express: 4.16.2
-  mongoose: 5.0.9
+  express: 4.16.3
+  mongoose: 5.0.10
   node-bing-api: 3.2.2
 packages:
   /accepts/1.3.5:
@@ -99,12 +99,12 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-Z5BTk6ZRe4tXXQlkqftmsAUANpXmuwlsF5Oov8ThoMbQRzdGTA1ngYRW160GexgOgjsFOKJz0LYhoNi+2AMBUw==
-  /bson/1.0.5:
+  /bson/1.0.6:
     dev: false
     engines:
       node: '>=0.6.19'
     resolution:
-      integrity: sha512-D4SCtud6mlEb48kXdTHU31DRU0bsgOJ+4St1Dcx30uYNnf/aGc+hC9gHB/z0Eth8HYYs/hr0SFdyZViht19SwA==
+      integrity: sha512-D8zmlb46xfuK2gGvKmUjIklQEouN2nQ0LEHHeZ/NoHM2LDiMk2EYzZ5Ntw/Urk+bgMDosOZxaRzXxvhI5TcAVQ==
   /bytes/3.0.0:
     dev: false
     engines:
@@ -236,7 +236,7 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
-  /express/4.16.2:
+  /express/4.16.3:
     dependencies:
       accepts: 1.3.5
       array-flatten: 1.1.1
@@ -250,7 +250,7 @@ packages:
       encodeurl: 1.0.2
       escape-html: 1.0.3
       etag: 1.8.1
-      finalhandler: 1.1.0
+      finalhandler: 1.1.1
       fresh: 0.5.2
       merge-descriptors: 1.0.1
       methods: 1.1.2
@@ -261,10 +261,10 @@ packages:
       qs: 6.5.1
       range-parser: 1.2.0
       safe-buffer: 5.1.1
-      send: 0.16.1
-      serve-static: 1.13.1
+      send: 0.16.2
+      serve-static: 1.13.2
       setprototypeof: 1.1.0
-      statuses: 1.3.1
+      statuses: 1.4.0
       type-is: 1.6.16
       utils-merge: 1.0.1
       vary: 1.1.2
@@ -272,7 +272,7 @@ packages:
     engines:
       node: '>= 0.10.0'
     resolution:
-      integrity: sha1-41xt/i1kt9ygpc1PIXgb4ymeB2w=
+      integrity: sha1-avilAjUNsyRuzEvs9rWjTSL37VM=
   /extend/3.0.1:
     dev: false
     resolution:
@@ -297,20 +297,20 @@ packages:
     dev: false
     resolution:
       integrity: sha1-1RQsDK7msRifh9OnYREGT4bIu/I=
-  /finalhandler/1.1.0:
+  /finalhandler/1.1.1:
     dependencies:
       debug: 2.6.9
       encodeurl: 1.0.2
       escape-html: 1.0.3
       on-finished: 2.3.0
       parseurl: 1.3.2
-      statuses: 1.3.1
+      statuses: 1.4.0
       unpipe: 1.0.0
     dev: false
     engines:
       node: '>= 0.8'
     resolution:
-      integrity: sha1-zgtoVbRYU+eRsvzGgARtiCU91/U=
+      integrity: sha512-Y1GUDo39ez4aHAw7MysnUD5JzYX+WaIj8I57kO3aEPT1fFRL4sr7mjei97FgnwhAyyzRYmQZaTHb2+9uZ1dPtg==
   /forever-agent/0.6.1:
     dev: false
     resolution:
@@ -497,7 +497,7 @@ packages:
       integrity: sha512-KI1+qOZu5DcW6wayYHSzR/tXKCDC5Om4s1z2QJjDULzLcmf3DvzS7oluY4HCTrc+9FiKmWUgeNLg7W3uIQvxtQ==
   /mongodb-core/3.0.4:
     dependencies:
-      bson: 1.0.5
+      bson: 1.0.6
       require_optional: 1.0.1
     dev: false
     resolution:
@@ -516,10 +516,10 @@ packages:
       mongoose: '*'
     resolution:
       integrity: sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
-  /mongoose/5.0.9:
+  /mongoose/5.0.10:
     dependencies:
       async: 2.1.4
-      bson: 1.0.5
+      bson: 1.0.6
       kareem: 2.0.5
       lodash.get: 4.4.2
       mongodb: 3.0.4
@@ -533,7 +533,7 @@ packages:
     engines:
       node: '>=4.0.0'
     resolution:
-      integrity: sha512-utGA97zd1R5NwRcqjhyPZP7sSExLQv9/KYAgFqtl6SRfp9vJXu5VPGwf6NdDRqUeh6e5v/tXVomkS2IPiSezxg==
+      integrity: sha512-vBfFP6hOHBdsWogc84cLofclWVAiu0+q0/oLxL/y61RUpW4K3BIGH2QhI+7lPBrGpGS1Yk/KfnumndWQI7wZiA==
   /mpath/0.3.0:
     dev: false
     resolution:
@@ -686,7 +686,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-4SJ3dm0WAwWy/NVeioZh5AntkdJoWKxHxcmyP622fOkgHa4z3R0TdBJICINyaSDE6uNwVc8gZr+ZinwZAH4xIA==
-  /send/0.16.1:
+  /send/0.16.2:
     dependencies:
       debug: 2.6.9
       depd: 1.1.2
@@ -700,23 +700,23 @@ packages:
       ms: 2.0.0
       on-finished: 2.3.0
       range-parser: 1.2.0
-      statuses: 1.3.1
+      statuses: 1.4.0
     dev: false
     engines:
       node: '>= 0.8.0'
     resolution:
-      integrity: sha512-ElCLJdJIKPk6ux/Hocwhk7NFHpI3pVm/IZOYWqUmoxcgeyM+MpxHHKhb8QmlJDX1pU6WrgaHBkVNm73Sv7uc2A==
-  /serve-static/1.13.1:
+      integrity: sha512-E64YFPUssFHEFBvpbbjr44NCLtI1AohxQ8ZSiJjQLskAdKuriYEP6VyGEsRDH8ScozGpkaX1BGvhanqCwkcEZw==
+  /serve-static/1.13.2:
     dependencies:
       encodeurl: 1.0.2
       escape-html: 1.0.3
       parseurl: 1.3.2
-      send: 0.16.1
+      send: 0.16.2
     dev: false
     engines:
       node: '>= 0.8.0'
     resolution:
-      integrity: sha512-hSMUZrsPa/I09VYFJwa627JJkNs0NrfL1Uzuup+GqHfToR2KcsXFymXSV90hoyw3M+msjFuQly+YzIH/q0MGlQ==
+      integrity: sha512-p/tdJrO4U387R9oMjb1oj7qSMaMfmOyd4j9hOFoxZe2baQszgHcSWjuya/CiT5kgZZKRudHNOA0pYXOl8rQ5nw==
   /setprototypeof/1.0.3:
     dev: false
     resolution:
@@ -757,12 +757,6 @@ packages:
       tweetnacl: 0.14.5
     resolution:
       integrity: sha1-US322mKHFEMW3EwY/hzx2UBzm+M=
-  /statuses/1.3.1:
-    dev: false
-    engines:
-      node: '>= 0.6'
-    resolution:
-      integrity: sha1-+vUbnrdKrvOzrPStX2Gr8ky3uT4=
   /statuses/1.4.0:
     dev: false
     engines:
@@ -843,6 +837,6 @@ shrinkwrapVersion: 3
 specifiers:
   body-parser: ^1.18.2
   cors: ^2.8.4
-  express: ^4.16.2
-  mongoose: ^5.0.9
+  express: ^4.16.3
+  mongoose: ^5.0.10
   node-bing-api: ^3.2.2
